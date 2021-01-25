@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Building website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style type="text/css">
+		.Box
+		{
+			margin: 0px auto;
+			width: 500px;
+			background-color: #ffec80;
+			padding: 15px 0 20px 20px;
+
+		}
+		.FlexBlock
+		{
+			display: flex;
+			margin-top: 20px;
+		}
+		.LockImg
+		{
+			height: 80px;
+			margin-right: 30px;
+		}
+		label
+		{
+			margin-right: 20px;
+		}
+		button
+		{
+			border: solid 1px;
+			outline: none !important;
+			border-radius: 5px;
+		}
+		input
+		{
+			outline: none !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="Box">
+			<b style="color: #0000CC"><h2>Login</h2></b>
+			<div class="FLexBlock">
+				<img src="https://res.cloudinary.com/wegoup/image/upload/v1605521347/u0rw15hsnfaxhjqaijiq.png">
+			</div>
+			<div class="RightBox">
+				<form method="post" id="LoginFormId">
+					<label style="margin-right: 20px">Account:</label>
+					<input required type="text" name="Acc">
+					<br>
+					<br>
+					<label style="margin-right: 20px">Password:</label>
+					<input required type="password" name="Password">
+					<br>
+					<br>
+					<button type="submit" style="margin-left: 95px" id="LoginId">Login</button>
+					<button type="reset">Again Login</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('#LoginFormId').submit(function ()
+	{
+		alert('Login success')
+	})
+</script>
+
+</body>
+</html>
